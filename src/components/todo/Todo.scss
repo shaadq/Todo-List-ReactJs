@@ -1,0 +1,86 @@
+.main-container {
+  height: 100vh;
+  padding: 90px;
+  .todo-container {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px 40px;
+    .todo-top-container {
+      padding: 20px 0;
+      width: 100%;
+
+      .todo-form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .todo-bottom-container {
+      padding: 20px 0;
+      .todo-list-wrapper {
+        padding: 0 40px;
+        overflow: auto;
+        max-height: 360px;
+        // transition: 5s;
+        width: 129%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .todo-wrapper {
+          transition: 5s;
+          padding: 10px 10px;
+          border: 1px solid rgb(211, 211, 211);
+          border-radius: 7px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          .todo-actions-wrapper {
+            display: flex;
+            gap: 10px;
+            i:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .todo-title {
+          margin: 0;
+        }
+
+        .no-todos-container {
+          padding: 10px 10px;
+          border: 1px solid rgb(211, 211, 211);
+          border-radius: 7px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// .fade-out {
+//   opacity: 1;
+//   transition: opacity 0.5s;
+// }
+// .fade-out:hover {
+//   opacity: 0.5;
+// }
+// .fade-out:active {
+//   opacity: 0.7;
+// }
+// .fade-out:empty {
+//   height: 0;
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   transition: height 0.5s;
+// }
