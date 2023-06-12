@@ -1,0 +1,11 @@
+.todo-list-wrapper::-webkit-scrollbar {
+    width: 7px;
+}
+.todo-list-wrapper::-webkit-scrollbar-track {
+    width: 7px;
+}
+.todo-list-wrapper::-webkit-scrollbar-thumb {
+    height: 5px;
+    border-radius: 7px;
+    background-color: rgb(255, 224, 229);
+}

@@ -32,15 +32,6 @@ const Todo = () => {
   }
   function editclick(Todo) {
     document.getElementById("todoInput").value = Todo.title;
-
-    // setTodos((prevItems) =>
-    //   prevItems.map((item) => {
-    //     if (item.id === Todo.id) {
-    //       return { ...item, title: todo }; // Update the name property of the matching item
-    //     }
-    //     return item; // Return the unchanged item for other items
-    //   })
-    // );
   }
 
   return (
@@ -48,7 +39,7 @@ const Todo = () => {
       <div className="todo-container">
         <div className="todo-top-container">
           <form className="todo-form gap-3">
-            <input
+            {/* <input
               id="todoInput"
               type="text"
               value={todo.title}
@@ -56,10 +47,23 @@ const Todo = () => {
               placeholder="Enter task"
               onChange={(e) => taskChange(e)}
               required
-            />
+            /> */}
+
+            <div class="form-floating w-100">
+              <input
+                id="todoInput"
+                type="text"
+                value={todo.title}
+                className="form-control"
+                placeholder="Enter task"
+                onChange={(e) => taskChange(e)}
+                required
+              />
+              <label for="floatingInput">Enter Task</label>
+            </div>
             <button
               type="submit"
-              className="btn btn-outline-primary"
+              className="btn btn-outline-secondary"
               onClick={(e) => addClick(e)}
             >
               Add
