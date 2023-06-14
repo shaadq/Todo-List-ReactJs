@@ -11,7 +11,7 @@ const Todo = () => {
   ]);
   const taskChange = (e) => {
     const todoId = Math.floor(Math.random() * 9000) + 1000;
-    setTodo({ id: todoId, title: e.target.value });
+    setTodo({ id: todoId, title: e.target.value }); 
   };
   function addClick(e) {
     e.preventDefault();
@@ -73,7 +73,7 @@ const Todo = () => {
         <div className="todo-bottom-container d-flex flex-column gap-2 align-items-center justify-content-start w-100">
           <h5 className="w-100">Todo List :</h5>
           <div className="todo-list-wrapper">
-            {todos.length != 0 ? (
+            {todos.length !== 0 ? (
               todos.map((todo) => (
                 <div
                   key={todo.id}
